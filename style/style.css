@@ -5,105 +5,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/*  inicio de header con menu */
-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 45px;
-  padding: 10px 5%;
-}
-.logo{
-  size: 24px 24px;
-  float: left;
-  margin-left: 5px;
-}
-header nav{
-float: right;
-}
-header nav .menu ul {
-width: 100%;
-position: absolute;
-top: 45px;
-right: 0;
-overflow: hidden;
-list-style: none;
-background: #0000EC;
-height: 0px;
-transition: height 0.5s ease;
-}
-header nav .menu  ul li {
-position: relative;
-}
-header nav .menu  ul li:hover {
-background: #0000EC;
-}
-header nav .menu ul li a {
-position: relative;
-text-decoration: none;
-color: #000;
-padding: 16px 5%;
-line-height: 28px;
-display: block;
-}
-header nav .menu  ul li a:hover {
-color: #FFFFFF;
-}
-header nav .menu input[type="checkbox"]:checked ~ ul {
-height: 240px;
-transition: height 0.5s ease-in-out;
--webkit-transition: height 0.5s ease-in-out;
-}
-header nav .menu {
-padding-top: 3px;
-}
-header nav .menu input {
-display: block;
-width: 40px;
-height: 32px;
-opacity: 0;
-z-index: 2;
-position: absolute;
-}
-header nav .menu span {
-  display: block;
-  width: 25px;
-  height: 2.5px;
-  margin-bottom: 6.5px;
-  position: relative;
-  background: #000;
-  z-index: 1;
-  transform-origin: 3px 0px;
-  transition: transform 0.5s ease;
-  opacity: 0.55s ease;
-}
-header nav .menu span:first-child {
-  transform-origin: 0% 0%;
-}
-header nav .menu span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-header nav .menu input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(2px, 1px);
-}
-header nav .menu input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-header nav .menu input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(1px, 0px);
-}
-.menu-lista{
-font-family: 'IBM Plex Mono', monospace;
-font-size: 16px;
-color: #060A24;
-letter-spacing: 0;
-line-height: 28px;
-}
-
-/* fin de header e inicio de main */
+/* inicio de main */
 main{
   width: 100%;
 }
@@ -117,7 +19,6 @@ section{
   letter-spacing: 0;
   line-height: 28px;
 }
-
 /* inicio primera sección y contenedor de Hello */
 .contenedor-hello{
   width: 90vw;
@@ -160,7 +61,7 @@ section{
   background-color: #00F3BB;
   color:#060A24;
   border: none;
-  font-family: 'IBM Plex Mono-Medium', monospace;  
+  font-family: 'IBM Plex Mono-Medium', monospace;
   font-size: 16px;
   letter-spacing: 0;
   text-align: center;
@@ -369,7 +270,7 @@ section div .center{
   font-size: 16px;
 }
 .segundo:hover{
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 /* fin segundo boton */
@@ -419,106 +320,9 @@ section div .center{
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
-/* inicio de header con menu */
-header{
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 45px;
-  padding: 10px 5%;
-}
-.logo{
-  size: 24px 24px;
-  float: left;
-  margin-left: 5px;
-}
-header nav{
-float: right;
-}
-header nav .menu ul {
-width: 100%;
-position: absolute;
-top: 45px;
-right: 0;
-overflow: hidden;
-list-style: none;
-background: #0000EC;
-height: 0px;
-transition: height 0.5s ease;
-}
-header nav .menu  ul li {
-position: relative;
-}
-header nav .menu  ul li:hover {
-background: #0000EC;
-}
-header nav .menu ul li a {
-position: relative;
-text-decoration: none;
-color: #000;
-padding: 16px 5%;
-line-height: 28px;
-display: block;
-}
-header nav .menu  ul li a:hover {
-color: #FFFFFF;
-}
-header nav .menu input[type="checkbox"]:checked ~ ul {
-height: 240px;
-transition: height 0.5s ease-in-out;
-}
-header nav .menu {
-padding-top: 3px;
-}
-header nav .menu input {
-display: block;
-width: 40px;
-height: 32px;
-opacity: 0;
-z-index: 2;
-position: absolute;
-}
-header nav .menu span {
-  display: block;
-  width: 25px;
-  height: 2.5px;
-  margin-bottom: 6.5px;
-  position: relative;
-  background: #000;
-  z-index: 1;
-  transform-origin: 3px 0px;
-  transition: transform 0.5s ease;
-  opacity: 0.55s ease;
-}
-header nav .menu span:first-child {
-  transform-origin: 0% 0%;
-}
-header nav .menu span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-header nav .menu input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(2px, 1px);
-}
-header nav .menu input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-header nav .menu input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(1px, 0px);
-}
-/*.menu-lista{
-font-family: 'IBM Plex Mono', monospace;
-font-size: 16px;
-color: #060A24;
-letter-spacing: 0;
-line-height: 28px;
-}*/
-
-/* fin de header e inicio de main */
+/* inicio de main */
 main{
 width: 100%;
 }
@@ -576,7 +380,7 @@ padding: 16px;
 background-color: #00F3BB;
 color:#060A24;
 border: none;
-font-family: 'IBM Plex Mono-Medium', monospace;  
+font-family: 'IBM Plex Mono-Medium', monospace;
 font-size: 16px;
 letter-spacing: 0;
 text-align: center;
@@ -769,7 +573,7 @@ top: -150px;
 font-size: 16px;
 }
 .segundo:hover{
-font-size: 16px; 
+font-size: 16px;
 }
 
 /* fin segundo boton */
@@ -817,49 +621,10 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-} 
+}
 }
 @media screen and (min-width: 700px){
-  .logo{
-    position: relative;
-    display: flex;
-    float:left;
-}
-  nav {
-    float: right;
-}
-  header nav .menu ul {
-      position: relative;
-      top: 0;
-      right: 0;
-      overflow: hidden;
-      background: unset;
-      height: unset;
-      display: flex;
-      float: right;
-}
-  header nav .menu  ul li {
-      display: inline;
-      padding: 5px 10px;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-}
-  header nav .menu  ul li:hover {
-      background: unset;
-      color: #00F3BB;
-      text-decoration: line-through;
-}
-  header nav .menu ul li a {
-      padding: unset;
-      line-height: unset;
-}
-  header nav .menu input {
-      display: none;
-}
-  header nav .menu span {
-      display: none;
-}
+  
 section .puntoazul{
   color: #0000EC;
 }
@@ -931,63 +696,13 @@ section .fotos{
   flex-flow: row wrap;
 }
 }
-@media screen and (max-width: 1220px) {
-  .logo{
-    position: relative;
-    display: flex;
-    float:left;
-}
-  nav {
-    float: right;
-}
-  header nav .menu ul {
-      position: relative;
-      top: 0;
-      right: 0;
-      overflow: hidden;
-      background: unset;
-      height: unset;
-      display: flex;
-      float: right;
-}
-  header nav .menu  ul li {
-      display: inline;
-      padding: 5px 10px;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-}
-  header nav .menu  ul li:hover {
-      background: unset;
-      color: #00F3BB;
-      text-decoration: line-through;
-}
-  header nav .menu ul li a {
-      padding: unset;
-      line-height: unset;
-}
-  header nav .menu input {
-      display: none;
-}
-  header nav .menu span {
-      display: none;
-}
-.menu-lista{
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 16px;
-  color: #060A24;
-  letter-spacing: 0;
-  line-height: 28px;
-}
-
-/* fin de header e inicio de main */
+@media screen and (min-width: 1220px) {
+/* inicio de main */
 main{
   width: 100%;
 }
 section{
   width: 100%;
-  display: flex;
-  flex-direction: column;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   color: #060A24;
@@ -1041,7 +756,7 @@ section .puntoazul{
   background-color: #00F3BB;
   color:#060A24;
   border: none;
-  font-family: 'IBM Plex Mono-Medium', monospace;  
+  font-family: 'IBM Plex Mono-Medium', monospace;
   font-size: 16px;
   letter-spacing: 0;
   text-align: center;
@@ -1061,7 +776,7 @@ button{
 /* inicio segunda seccion Azul */
 .seccion-azul{
   width: 1800px;
-  height:1203,5px;
+  height: 1203px,5px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   }
 .azul{
@@ -1075,8 +790,8 @@ button{
   transform: skew(0, 3deg);
   width: 48%;
   display: flex;
-  flex-direction: row (2, 1fr);
-  float:left;
+  justify-content: center;
+
 }
 .titulo-episodios{
   font-family: 'IBM Plex Sans', sans-serif;
@@ -1151,6 +866,9 @@ button{
 .contenedor-entrevistas{
   position:relative;
   top: 870px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .titulo-secundario{
   font-family: 'IBM Plex Sans', sans-serif;
@@ -1242,7 +960,7 @@ section div .center{
   font-size: 16px;
 }
 .segundo:hover{
-  font-size: 16px; 
+  font-size: 16px;
 }
 /* fin segundo boton */
 
