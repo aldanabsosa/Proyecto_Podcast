@@ -5,7 +5,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* inicio de main */
+/* inicio de main Mobile First para viewport 280px */
 main{
   width: 100%;
 }
@@ -31,7 +31,7 @@ section{
 .tachado {
   text-decoration: line-through;
 }
-.parrafo-principal{
+p .parrafo-principal{
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   color: #060A24;
@@ -39,10 +39,9 @@ section{
   line-height: 22px;
   margin: 16px 16px 16px 16px;
 }
-.tecnologia{
+p .desktop{
   display: none;
 }
-
 /* fin de primer section Hello */
 /* primer boton */
 .verde{
@@ -273,11 +272,9 @@ section div .center{
   position: relative;
   top: 812px;
   width: 90%;
-  background: #FFFFFF;;
+  background: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
 }
 .contenedor-copyright{
   position: relative;
@@ -290,16 +287,12 @@ section div .center{
   letter-spacing: 0;
   line-height: 22px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .contenedor-redes-sociales{
   position: relative;
-  top: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  float: right;
+  margin-left: 750px;
 }
 .redes-sociales{
   font-family: 'Font Awesome 5Brands-Regular';
@@ -308,10 +301,7 @@ section div .center{
   color: #060A24;
   letter-spacing: 0;
   line-height: 28px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 10px;
 }
 @media screen and (min-width: 320px) {
 
@@ -321,13 +311,6 @@ width: 100%;
 }
 section{
 width: 100%;
-display: flex;
-flex-direction: column;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 16px;
-color: #060A24;
-letter-spacing: 0;
-line-height: 28px;
 }
 
 /* inicio primera sección Hello y contenedor de Hello */
@@ -357,9 +340,7 @@ letter-spacing: 0;
 line-height: 22px;
 margin: 16px 16px 16px 16px;
 }
-.tecnologia{
- display: none;
-}
+
 
 /* fin de primer seccion Hello */
 
@@ -573,59 +554,47 @@ font-size: 16px;
 
 /* fin de sexta seccion e inicio footer */
 .footer{
-position: relative;
-top: 812px;
-width: 100%;
-background: #FFFFFF;;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  position: relative;
+  top: 812px;
+  width: 90%;
+  background: #FFFFFF;
+  display: flex;
+  
 }
 .contenedor-copyright{
-position: relative;
-width: 227px;
-height: 22px;
-top: 10px;
-font-family: 'IBM Plex Mono';
-font-size: 14px;
-color: #060A24;
-letter-spacing: 0;
-line-height: 22px;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: relative;
+  width: 227px;
+  height: 22px;
+  top: 10px;
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  display: flex;
 }
 .contenedor-redes-sociales{
-position: relative;
-top: 50px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  position: relative;
+  display: flex;
+  float: right;
+  margin-left: 750px;
 }
 .redes-sociales{
-font-family: 'Font Awesome 5Brands-Regular';
-font-size: 16px;
-color: #060A24;
-letter-spacing: 0;
-line-height: 28px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  font-family: 'Font Awesome 5Brands-Regular';
+  font-size: 16px;
+  width: 100%;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 720px){
   
 section .puntoazul{
   color: #0000EC;
 }
-section .episodios-spotify{
-  width: 48%;
-  display: flex;
-  flex-direction: row (2, 1fr);
-  float:left;
+.parrafo-principal{
+  display: none;
 }
 .azul{
   width: 1800px;
@@ -660,33 +629,47 @@ section .episodios-spotify{
     letter-spacing: 0;
     line-height: 42px;
 }
-section div .center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fotos{
+  width: 480px;
+  height: 364px;
 }
 .footer{
-  width: 100%;
+  position: relative;
+  top: 812px;
+  width: 90%;
+  background: #FFFFFF;
   display: flex;
-  flex-direction: row;
-  text-align: unset;
-  justify-content: space-between;
+  
+}
+.contenedor-copyright{
+  position: relative;
+  width: 227px;
+  height: 22px;
+  top: 10px;
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  display: flex;
 }
 .contenedor-redes-sociales{
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  float: right;
+  margin-left: 750px;
 }
 .redes-sociales{
-  font-family: 'FontAwesome5Brands-Regular';
+  font-family: 'Font Awesome 5Brands-Regular';
   font-size: 16px;
+  width: 100%;
   color: #060A24;
   letter-spacing: 0;
   line-height: 28px;
-}
-section .fotos{
-  display: flex;
-  flex-flow: row wrap;
 }
 }
 @media screen and (min-width: 1220px) {
@@ -718,7 +701,7 @@ section{
 .tachado {
   text-decoration: line-through;
 }
-.parrafo-principal{
+.desktop{
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   color: #060A24;
@@ -728,9 +711,13 @@ section{
   height: 48px;
   margin-left: 200px;
 }
+.parrafo-principal{
+  display: none;
+}
 .puntoazul{
   color: #0000EC;
 }
+
 /* fin de primer section Hello */
 
 /* primer boton */
@@ -901,17 +888,47 @@ button{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   color: #060A24;
+  margin-left: 200px;
 }
 .icono{
   width: 104px;
   height: 104px;
-  margin: 13px 108px 13px 108px;
+  margin: 13px 100px 13px 100px;
 }
 .titulo-icons{
   width: 586px;
   height: 62px;
-  margin-left: 400px;
   margin-bottom: 52px;
+}
+.titulo-iconos{
+  font-family: 'IBM Plex Sans';
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remoto{
+  width: 220px;
+  height: 32px;
+  margin-left: 50px;
+}
+.programacion{
+  width: 220px;
+  height: 64px;
+  margin-left: 50px;
+}
+.codigo{
+  width: 220px;
+  height: 32px;
+  margin-left: 50px;
+}
+.seguridad{
+  width: 220px;
+  height: 64px;
+  margin-left: 50px;
 }
 .margen1{
   margin-left: 800px;
@@ -964,14 +981,12 @@ button{
 
 /* fin de sexta seccion e inicio footer */
 .footer{
-  top: 840px;
-  width: 100%;
+  position: relative;
+  top: 812px;
+  width: 90%;
   background: #FFFFFF;
   display: flex;
-}
-.cuadrado-blanco{
-  background: #FFFFFF;
-  border-width: 2px;
+  height: 500px;
   width: 1440px;
 }
 .contenedor-copyright{
@@ -985,11 +1000,12 @@ button{
   letter-spacing: 0;
   line-height: 22px;
   display: flex;
-  margin-left: 100px;
 }
 .contenedor-redes-sociales{
+  position: relative;
   display: flex;
-  flex-direction: row;
+  float: right;
+  margin-left: 750px;
 }
 .redes-sociales{
   font-family: 'Font Awesome 5Brands-Regular';
@@ -998,9 +1014,5 @@ button{
   color: #060A24;
   letter-spacing: 0;
   line-height: 28px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  float: right;
 }
 }
