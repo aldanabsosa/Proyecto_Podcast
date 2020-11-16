@@ -31,6 +31,7 @@ header nav .menu ul {
     overflow: hidden;
     list-style: none;
     background: #0000EC;
+    opacity: 100%;
     height: 0px;
 }
 header nav .menu  ul li {
